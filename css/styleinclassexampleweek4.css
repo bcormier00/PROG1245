@@ -1,0 +1,40 @@
+body {
+    width: 85%;
+    margin: auto;
+    border: 2px solid black;
+}
+header {
+    text-align: center;
+    color: brown;
+}
+nav {
+    background-color: antiquewhite;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav a {
+    color: brown;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+p a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+footer{
+    text-align: center;
+    color: brown;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: antiquewhite;
+    padding: 15px;
+}
+main {
+    margin: 20px;
+}
