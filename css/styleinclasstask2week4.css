@@ -6,7 +6,7 @@ body {
     background-color: hsla(70, 73%, 59%, 0.4);
     height: 70vh;
     width: 70vw;
-    
+
 }
 
 h2 {
@@ -15,12 +15,65 @@ h2 {
 }
 
 ul {
-    list-style-type:lower-greek;
+    list-style-type: lower-greek;
     line-height: 200%;
-    
+
 }
 
 a {
-   
-   color: rgba(255, 99, 71, 0.5);
+
+    color: rgba(255, 99, 71, 0.5);
+}
+
+body {
+    width: 100%;
+}
+
+aside {
+    float: right;
+    background-color: hsl(0, 100%, 61%);
+    width: 20%;
+}
+
+main {
+    background-color: hsl(172, 52%, 61%);
+    width: 70%;
+    float: left;
+}
+
+.structural {
+    padding: 8px;
+    border: 5px red;
+    margin: auto;
+}
+
+#first {
+    color: rgb(92, 2, 20);
+}
+
+#second {
+    color: rgb(255, 247, 20);
+}
+
+header {
+    background-color: hsl(255, 100%, 50%);
+    width: 100%;
+}
+
+footer {
+    background-color: hsl(333, 100%, 50%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover {
+    color: #C0D;
+
+}
+
+footer p {
+    font-size: small;
+
 }
