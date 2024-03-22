@@ -3,7 +3,7 @@ Student #: 8972402
 */
 body {
     font: 1.2rem "Fira Sans", sans-serif;
-    background-color: hsla(70, 73%, 59%, 0.4);
+    background-color: hsla(199, 70%, 52%, 0.4);
     height: 70vh;
     width: 70vw;
 
@@ -31,14 +31,13 @@ body {
 
 aside {
     float: right;
-    background-color: hsl(0, 100%, 61%);
     width: 20%;
 }
 
 main {
-    background-color: hsl(172, 52%, 61%);
     width: 70%;
     float: left;
+    font-size: small;
 }
 
 .structural {
@@ -56,16 +55,17 @@ main {
 }
 
 header {
-    background-color: hsl(255, 100%, 50%);
+    background-color: grey;
     width: 100%;
 }
 
 footer {
-    background-color: hsl(333, 100%, 50%);
-    position: absolute;
+    background-color: grey;
     bottom: 0;
+    position: absolute;
     width: 100%;
     text-align: center;
+    z-index: 10;
 }
 
 a:hover {
@@ -76,4 +76,81 @@ a:hover {
 footer p {
     font-size: small;
 
+}
+nav li {
+    display: inline;
+    list-style: none;
+}
+nav a {
+    border: 2px;
+    background-color: cornsilk;
+    text-decoration: none;
+}
+nav a:hover {
+    border-color: cornsilk;
+    color: cornsilk;
+    background-color: indigo;
+}
+form {
+    border: 5px;
+    padding: 5px;
+}
+input[type=text] {
+    width: 50%;
+    display: block;
+    height: 2em;
+}
+input[type=email] {
+    width: 50%;
+    display: block;
+    height: 2em;
+ }
+ input[type=submit] {
+    width: 50%;
+    display: block;
+    height: 2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+ }
+ select {
+    width: 50%;
+    display: block;
+    height: 2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+ }
+ option {
+    width: 50%;
+    display: block;
+    height: 2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+ }
+ input[type=radio] {
+    height: 2em;
+    width: 2em;
+ }
+ input[type=checkbox] {
+    height: 2em;
+    width: 2em;
+ }
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+textarea {
+    width: 50%;
+    display: block;
+}
+fieldset{
+    border: none;
 }
