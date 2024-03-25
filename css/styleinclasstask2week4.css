@@ -1,14 +1,21 @@
 /* Brandon Cormier 
 Student #: 8972402
 */
+html {
+    font: 20px "Fira Sans", sans-serif;
+}
 body {
-    font: 1.2rem "Fira Sans", sans-serif;
     background-color: hsla(199, 70%, 52%, 0.4);
     height: 70vh;
     width: 70vw;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 
 }
-
+h1{
+    font-size: 2.5rem;
+}
 h2 {
     color: #f00;
     font-size: vh;
@@ -30,20 +37,17 @@ body {
 }
 
 aside {
-    float: right;
-    width: 20%;
+   flex: 1 1 30%; 
 }
 
 main {
-    width: 70%;
-    float: left;
+    flex: 2 1 70%;    
     font-size: small;
 }
 
 .structural {
-    padding: 8px;
     border: 5px red;
-    margin: auto;
+    margin: 1rem;
 }
 
 #first {
@@ -61,11 +65,10 @@ header {
 
 footer {
     background-color: grey;
-    bottom: 0;
-    position: absolute;
     width: 100%;
     text-align: center;
-    z-index: 10;
+    position: absolute;
+    bottom: 0;
 }
 
 a:hover {
@@ -77,12 +80,15 @@ footer p {
     font-size: small;
 
 }
+nav li a {
+    padding: 1em;
+}
 nav li {
     display: inline;
     list-style: none;
 }
 nav a {
-    border: 2px;
+    border: 1em;
     background-color: cornsilk;
     text-decoration: none;
 }
@@ -92,8 +98,8 @@ nav a:hover {
     background-color: indigo;
 }
 form {
-    border: 5px;
-    padding: 5px;
+    border: 1em;
+    padding: 1em;
 }
 input[type=text] {
     width: 50%;
@@ -153,4 +159,39 @@ textarea {
 }
 fieldset{
     border: none;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+figure{
+    border: 1px solid black;
+}
+img {
+    height: 80%;
+    width: 80%;
+}
+@media screen and (max-width: 600px){
+    html {
+        font-size: 10px;
+    }
+    #gallery {
+        grid-template-columns: 1fr;
+    }
+section {
+    flex-direction: column;
+}
+
+
 }
